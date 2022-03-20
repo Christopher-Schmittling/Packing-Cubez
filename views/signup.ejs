@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') -%>
+<div class="container-fluid center-text">
+  <h1>Packing Cubez</h1>
+</div>
+<div class="container-fluid">
+  <form class="" action="/signup" method="post">
+    <div class="mb-3">
+        <label class="form-label" for="inputName">Name</label>
+        <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="inputEmail">Email</label>
+        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="inputPassword">Password</label>
+        <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="inputConfirmPassword">Confirm Password</label>
+        <input type="password" name="confirmPassword" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
+    </div>
+    <div class="validate-data">
+      <%= validateData %>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+  </form>
+</div>
+<%- include('partials/footer.ejs') -%>
